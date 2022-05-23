@@ -1,0 +1,19 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,gcd,lcm,temp;
+    cin>>a>>b;
+    int c=a;
+    int d=b;
+    while(b!=0)
+    {
+        temp=b;
+        b=a%b;
+        a=temp;
+    }
+    gcd=a;
+    lcm=(c*d)/gcd;
+    cout<<lcm;
+    return 0;
+}
