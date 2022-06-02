@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[100];
+    int s1=0,s2=0,td;
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    for(int i=0;i<n;i++)
+    {
+        if(i%2==0)
+        {
+         s1+=arr[i];   
+        }
+        else
+        {
+            s2+=arr[i];
+        }
+    }
+    td=abs(s1-s2);
+    cout<<td;
+}
